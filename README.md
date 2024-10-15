@@ -2,7 +2,7 @@
 
 Some experiments using the SQLite database to manage and query music-related data.
 
-**Assignment 3 Submission by Diya Wadhwani**
+**Assignment 4 Submission by Diya Wadhwani**
 
 ## How to run it
 
