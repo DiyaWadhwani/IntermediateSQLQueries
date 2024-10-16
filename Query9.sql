@@ -1,5 +1,7 @@
 -- Query 9 - Creative Addition: Min, Max and Avg File Sizes in MB of each Genre and No. of Albums from each Genre
+
 -- This query retrieves track information alongside the album and genre it belongs to. It calculates the file size of each track and shows the average, minimum, and maximum file sizes for all tracks within each genre.
+-- It provides valuable insights about track file sizes grouped by genres which can be used by music companies to understand the distribution of file sizes across different genres and optimize their storage and streaming services accordingly.
 
 SELECT g.GenreId, g.Name AS GenreType, t.TrackId, al.Title, t.Name AS TrackTitle,
     ROUND(t.bytes / 1024.0 / 1024.0, 2) AS FileSize_MB, 
