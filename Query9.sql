@@ -10,4 +10,5 @@ SELECT
     FROM genres g
     INNER JOIN tracks t ON t.GenreId = g.GenreId
     INNER JOIN albums al ON t.AlbumId = al.AlbumId
+    WHERE t.bytes IS NOT NULL
     ORDER BY g.GenreId, al.AlbumId, t.TrackId;

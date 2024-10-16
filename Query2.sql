@@ -3,4 +3,6 @@
 SELECT al.Title AS Album, ar.Name AS Artist 
     FROM albums al 
     INNER JOIN artists ar 
-    ON al.ArtistId = ar.ArtistId;
+    ON al.ArtistId = ar.ArtistId
+    WHERE al.Title IS NOT NULL
+    AND ar.Name IS NOT NULL;
